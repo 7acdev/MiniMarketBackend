@@ -27,8 +27,8 @@ public class AutoMapperProfile : Profile
 
         CreateMap<Sale, SaleDTO>().ForMember(
             d => d.TotalText, opt => opt.MapFrom(origen => Convert.ToString(origen.Total!.Value, CultureInfo.InvariantCulture))
-        )
-        .ForMember(d => d.RegisterDate, opt => opt.MapFrom(origin => origin.RegisterDate!.Value.ToString("dd/MM/yyyy")));
+        );
+        //.ForMember(d => d.RegisterDate, opt => opt.MapFrom(origin => origin.RegisterDate!.Value.ToString("d/M/yyyy", new CultureInfo("es-ES"))));
 
         CreateMap<SaleDTO, Sale>()
         .ForMember(d => d.Total,
@@ -51,8 +51,8 @@ public class AutoMapperProfile : Profile
         );
 
         CreateMap<SaleDetail, ReportDTO>()
-        .ForMember(d => d.RegisterDate,
-            opt => opt.MapFrom(origin => origin.IdSaleNavigation!.RegisterDate!.Value.ToString("dd/MM/yyyy")))
+        //.ForMember(d => d.RegisterDate,
+        //    opt => opt.MapFrom(origin => origin.IdSaleNavigation!.RegisterDate!.Value.ToString("d/M/yyyy", new CultureInfo("es-ES"))))
         .ForMember(d => d.DocumentNumber,
             opt => opt.MapFrom(origin => origin.IdSaleNavigation!.DocumentNumber))
         .ForMember(d => d.PaidType,
