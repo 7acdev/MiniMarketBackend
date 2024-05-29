@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinimarketBackend", "MinimarketBackend", "{870549E9-4D51-46DF-AFF6-2D233114CD04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimarketAPI", "MinimarketAPI\MinimarketAPI.csproj", "{48F6F373-8FA8-4268-98EF-1AF71923D524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F6F373-8FA8-4268-98EF-1AF71923D524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F6F373-8FA8-4268-98EF-1AF71923D524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F6F373-8FA8-4268-98EF-1AF71923D524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F6F373-8FA8-4268-98EF-1AF71923D524}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48F6F373-8FA8-4268-98EF-1AF71923D524} = {870549E9-4D51-46DF-AFF6-2D233114CD04}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8E47D52-7E64-4D8A-AC96-E9F38F8B7E2E}
+	EndGlobalSection
+EndGlobal
