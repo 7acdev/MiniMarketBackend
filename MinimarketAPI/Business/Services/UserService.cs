@@ -12,6 +12,8 @@ using Minimarket.DTO;
 using Minimarket.Model;
 using Minimarket.Util;
 using System.Linq.Expressions;
+using System.Reflection;
+
 
 namespace Minimarket.Business.Service;
 
@@ -374,7 +376,11 @@ public class UserService : IUserService
             );
 
             if (File.Exists(fileName))
+            {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
                 File.Delete(fileName);
+            }
             else
                 return false;
 
